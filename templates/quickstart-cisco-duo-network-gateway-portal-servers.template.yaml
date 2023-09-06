@@ -143,7 +143,7 @@ Parameters:
 #    us-west-2:
 #      US1604HVM: ami-ca89eeb2
 Conditions:
-  UsingDefaultBucket: !Equals [!Ref QSS3BucketName, 'aws-quickstart']
+  UsingDefaultBucket: !Equals [!Ref QSS3BucketName, 'aws-ia-us-east-1']
   GovCloudCondition: !Equals 
     - !Ref 'AWS::Region'
     - us-gov-west-1
@@ -515,13 +515,13 @@ Resources:
     Properties:
       TemplateURL:
         !Sub
-          - 'https://${S3Bucket}.s3.${S3Region}.${AWS::URLSuffix}/${QSS3KeyPrefix}submodules/quickstart-aws-acm-certificate/templates/quickstart-aws-acm-certificate.template.yml'
+          - 'https://${S3Bucket}.s3.${S3Region}.${AWS::URLSuffix}/${QSS3KeyPrefix}submodules/cfn-ps-aws-acm-certificate/templates/quickstart-aws-acm-certificate.template.yml'
           - S3Region: !If [UsingDefaultBucket, !Ref 'AWS::Region', !Ref QSS3BucketRegion]
             S3Bucket: !If [UsingDefaultBucket, !Sub '${QSS3BucketName}-${AWS::Region}', !Ref QSS3BucketName]
       Parameters:
         QSS3BucketName: !Ref QSS3BucketName
         QSS3BucketRegion: !Ref QSS3BucketRegion
-        QSS3KeyPrefix: !Sub '${QSS3KeyPrefix}submodules/quickstart-aws-acm-certificate/'
+        QSS3KeyPrefix: !Sub '${QSS3KeyPrefix}submodules/cfn-ps-aws-acm-certificate/'
         DomainName: !Ref DomainName
         HostedZoneID: !Ref HostedZoneID
   DNGDNSRecord:
