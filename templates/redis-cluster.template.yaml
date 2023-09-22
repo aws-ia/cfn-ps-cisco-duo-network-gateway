@@ -18,6 +18,7 @@ Parameters:
   RedisAuth:
     Description: The Auth Token for the redis cluster
     Type: String
+    NoEcho: true
     ConstraintDescription: Must be 16-128 characters including atleast three of uppercase, lowercase, nonalphanumeric, and digits
   RedisCacheNodeType:
     Type: String
