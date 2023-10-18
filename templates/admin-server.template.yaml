@@ -101,7 +101,7 @@ Conditions:
   UsingDefaultBucket:
     Fn::Equals:
       - Ref: QSS3BucketName
-      - aws-quickstart
+      - aws-ia
   CustomDns:
     Fn::Not:
       - Fn::Equals:
