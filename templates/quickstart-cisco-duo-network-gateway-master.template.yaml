@@ -279,8 +279,8 @@ Parameters:
     Type: String
   RedisEngineVersion:
     AllowedValues:
-      - 3.2.6
-    Default: 3.2.6
+      - 6.2
+    Default: 6.2
     Description: Redis replication group version.
     Type: String
   SnapshotName:
@@ -302,7 +302,7 @@ Parameters:
 Conditions:
   UsingDefaultBucket: !Equals 
     - !Ref QSS3BucketName
-    - aws-ia-us-east-1
+    - aws-ia
 Resources:
   VPCStack:
     Type: 'AWS::CloudFormation::Stack'
