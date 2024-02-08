@@ -74,7 +74,7 @@ Resources:
       AutomaticFailoverEnabled: true
       CacheNodeType:
         Ref: RedisCacheNodeType
-      CacheParameterGroupName: redis6.2
+      #CacheParameterGroupName: redis6.2
       CacheSubnetGroupName:
         Ref: CacheSubnetGroupName
       NumNodeGroups:
