@@ -21,7 +21,7 @@ tests:
       PortalServerRemoteAccessCIDR: "10.0.0.0/16"
       RedisAuth: DuoRedisAuthToken
       RedisCacheNodeType: cache.t3.medium
-      RedisEngineVersion: 3.2.6
+      #RedisEngineVersion: 3.2.6
       NumShards: 1
       NumReplicas: 1
       SnapshotName: ''
