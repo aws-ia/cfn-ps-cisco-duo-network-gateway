@@ -8,3 +8,6 @@
 [submodule "submodules/lambda-copyzips"]
 	path = submodules/lambda-copyzips
 	url = https://github.com/aws-ia/lambda-copyzips.git
+[submodule "submodules/cfn-ps-aws-acm-certificate"]
+	path = submodules/cfn-ps-aws-acm-certificate
+	url = https://github.com/aws-ia/cfn-ps-aws-acm-certificate.git
