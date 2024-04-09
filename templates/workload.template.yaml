@@ -373,15 +373,13 @@ Resources:
         AdminServerInstanceType: !Ref AdminServerInstanceType
         ConfigYAMLPath: !Ref ConfigYAMLPath
         KeyPairName: !Ref KeyPairName
-        QSS3BucketName:
-          Ref: QSS3BucketName
-        QSS3KeyPrefix:
-          Ref: QSS3KeyPrefix
+        QSS3BucketName: !Ref QSS3BucketName
+        QSS3KeyPrefix: !Ref QSS3KeyPrefix
+        QSS3BucketRegion: !Ref QSS3BucketRegion
         PrivateSubnet1ID: !Ref PrivateSubnet1ID
         PublicSubnet1ID: !Ref PublicSubnet1ID
         PublicSubnet2ID: !Ref PublicSubnet2ID
-        RemoteAccessCIDR:
-          Ref: AdminServerRemoteAccessCIDR
+        RemoteAccessCIDR: !Ref AdminServerRemoteAccessCIDR
         VPCID: !Ref VPCID
         RedisHost: !GetAtt RedisServerStack.Outputs.PrimaryEndPointAddress
         RedisPort: !GetAtt RedisServerStack.Outputs.PrimaryEndPointPort

@@ -1,8 +1,9 @@
 project:
   name: cfn-ps-cisco-duo-network-gateway
   owner: quickstart-eng@amazon.com
+  package_lambda: false
   regions:
-  - us-east-1
+  - us-west-1
   parameters:
     QSS3BucketName: $[taskcat_autobucket]
     QSS3BucketRegion: $[taskcat_current_region]
