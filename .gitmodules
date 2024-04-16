@@ -1,6 +1,7 @@
 [submodule "docs/boilerplate"]
 	path = docs/boilerplate
 	url = https://github.com/aws-ia/aws-ia-documentation-base-common.git
+        branch = main
 [submodule "submodules/cfn-ps-aws-vpc"]
 	path = submodules/cfn-ps-aws-vpc
 	url = https://github.com/aws-ia/cfn-ps-aws-vpc.git
@@ -8,6 +9,8 @@
 [submodule "submodules/lambda-copyzips"]
 	path = submodules/lambda-copyzips
 	url = https://github.com/aws-ia/lambda-copyzips.git
+        branch = main
 [submodule "submodules/cfn-ps-aws-acm-certificate"]
 	path = submodules/cfn-ps-aws-acm-certificate
 	url = https://github.com/aws-ia/cfn-ps-aws-acm-certificate.git
+        branch = main
