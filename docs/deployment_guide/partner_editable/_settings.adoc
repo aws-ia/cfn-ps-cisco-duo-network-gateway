@@ -3,8 +3,8 @@
 :partner-product-name: Duo Network Gateway
 :partner-product-short-name: Duo Network Gateway
 :partner-company-name: Cisco Systems Inc.
-:doc-month: September
-:doc-year: 2020
+:doc-month: March
+:doc-year: 2024
 :partner-contributors: Jacob Julian, {partner-company-name}
 // :other-contributors: Akua Mansa, Trek10
 :aws-contributors: Muffadal Quettawala, Amazon Web Services
